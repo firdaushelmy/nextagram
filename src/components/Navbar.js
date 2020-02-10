@@ -17,7 +17,7 @@ import {
 } from 'reactstrap';
 import AuthModal from "./authModal"
 import LogMeIn from "./LogMeIn";
-// import AuthModal2 from "./authModal2"
+import AuthModal2 from "./authModal2"
 
 // loginClick = () => {
 // login.setState({
@@ -63,7 +63,7 @@ const NavBar = (props) => {
                         </UncontrolledDropdown>
                     </Nav>
                     <AuthModal buttonLabel='Login' />
-                    {/* <AuthModal2 buttonLabel='Upload' /> */}
+                    <AuthModal2 buttonLabel='Upload' />
 
                 </Collapse>
             </Navbar>

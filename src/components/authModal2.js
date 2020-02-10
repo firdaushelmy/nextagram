@@ -11,8 +11,8 @@ import UploadPage from "./UploadPage"
 
 const AuthModal2 = ({ buttonLabel }) => {
   // this is to set the modal state - default is false, dunno wtf it does
-  const [modal2, setModal2] = useState(false);
-  const [showLogin2, setShowLogin2] = useState(true);
+  const [modal, setModal] = useState(false);
+  const [showLogin, setShowLogin] = useState(true);
 
   const toggle = () => {
     setModal(!modal);
@@ -37,10 +37,7 @@ const AuthModal2 = ({ buttonLabel }) => {
           {showLogin ? "Login" : "Sign Up"}
         </ModalHeader>
         <ModalBody>
-          {showLogin
-            ? <LogMeIn />
-            :
-            <SignMeUp />}
+          <UploadPage />
         </ModalBody>
         <ModalFooter>
           <Button
